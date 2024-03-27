@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="grade.css">
+     <script src="grade.js"></script>
+     
+</head>
+<body>
+<form  id="res" >
+<table width="1100px">
+<div id="first">
+<tr>
+<th>SUBJECTS</th>
+<th> MARKS </th>
+</tr>
+
+<tr>
+<td> Tamil </td>
+<td> <input type="text" id="tamil" placeholder="Enter Your Tamil Mark" min="0"  max="100" maxlength="3" required></td> 
+</tr>
+
+<tr>
+<td> English </td>
+<td> <input type="text" id="english" placeholder="Enter Your English Mark" min="0" max="100" maxlength="3" required></td>
+</tr>
+
+<tr>
+<td> Mathematics </td>
+<td> <input type="text" id="maths" placeholder="Enter Your Maths Mark" min="0" max="100" maxlength="3" required> </td>
+</tr>
+
+<tr>
+<td> Science </td>
+<td> <input type="text" id="science" placeholder="Enter Your Science Mark" min="0" max="100" maxlength="3" required></td>
+</tr>
+
+<tr>
+<td> Social Science </td>
+<td> <input type="text" id="social" placeholder="Enter Your Social Mark" min="0" max="100" maxlength="3" required></td>
+</tr>
+</div>
+</table>
+<div id="second"><table width="900px">
+<tr id="button" rowspan="2">
+<td id="on"><input type="button" value="SUBMIT" onclick="cal()"> </td>
+<td id="off"> <input type="button" value="RESET" onclick="rest()"></td>
+</tr>
+<div>
+<table id="tl">
+<tr>
+<td> <input id="tot" placeholder="TOTAL"></td>
+
+<td> <input id="avg" placeholder="AVERAGE"></td>
+</tr>
+<tr>
+<td> <input id="per" placeholder="PERCENTAGE"> </td>
+
+<td> <input id="gra" placeholder="GRADE"> </td>
+</tr>
+</div>
+</table>
+</form>
+    
+</body>
+</html>
